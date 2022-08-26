@@ -15,7 +15,7 @@ Algoritmo sin_titulo
 		Escribir "Ingresaste una fecha Invalida"
 	SiNo
 		//Verificar si Año no es bisiesto y fue ingresado dia 29-31, Exibir texto
-		Si ((ano % 4) > 0) y mes=2 y dia>28 Entonces
+		Si (((ano % 4) > 0) o ((ano % 100) = 0) o ((ano % 400) > 0)) y mes=2 y dia>28 Entonces
 			Escribir "En ese año Febrero tiene solamente 28 dias!"
 		SiNo
 			//Verificar si es un mes de 30 dias, Exibir texto
