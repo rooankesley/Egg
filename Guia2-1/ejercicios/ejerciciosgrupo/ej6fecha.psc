@@ -13,12 +13,8 @@ Algoritmo ej6fecha
 	Si ((ano < 1800) o (ano > 2100)) o ((mes < 1) o (mes > 12)) o ((dia < 1) o (dia > 31)) Entonces
 		Escribir "Ingresaste una fecha Invalida" //Si es Invalida, exibir Texto
 	SiNo
-<<<<<<< Updated upstream
 		//Verificar si Año no es bisiesto y fue ingresado dia 29-31, Exibir texto
-		Si (((ano % 4) > 0) o ((ano % 100) = 0) o ((ano % 400) > 0)) y mes=2 y dia>28 Entonces
-=======
-		Si ((ano % 4) > 0) y mes=2 y dia>28 Entonces //Verificar si Año no es bisiesto y fue ingresado dia 29-31, Exibir texto
->>>>>>> Stashed changes
+		Si (((ano % 4) > 0) o ((ano % 100) = 0) o ((ano % 400) > 0)) y mes=2 y dia>28 Entonces //Verificar si Año no es bisiesto y fue ingresado dia 29-31, Exibir texto
 			Escribir "En ese año Febrero tiene solamente 28 dias!"
 		SiNo
 			//Verificar si es un mes de 30 dias, Exibir texto
