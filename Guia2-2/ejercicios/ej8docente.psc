@@ -1,9 +1,10 @@
 Algoritmo ej8docente
 	Definir numalumnos, notaint, notaexpo, notaparcial, notafinal, sumarepro, mayorexpo Como Real
-	Definir alumnosrep, integradormayorque75, parcialmayorymenorque Como Entero
-	Definir i Como Entero
+	Definir alumnosrep, integradormayorque75, parcialmayorymenorque, i Como Entero
+	
 	Escribir "Cual es la cantidad de estudiantes? " Sin Saltar
 	Leer numalumnos
+	Si numalumnos < 0 Entonces
 	Para i = 1 Hasta numalumnos Hacer
 		Escribir "Nota del trabajo prático integrador del alumno ", i, " " Sin Saltar
 		Leer notaint
@@ -20,8 +21,8 @@ Algoritmo ej8docente
 			mayorexpo = 0
 		FinSi
 		Si notafinal < 6.5 Entonces
-			alumnosrep = alumnosrep + 1
-			sumarepro = sumarepro + notafinal
+			alumnosrep <- alumnosrep + 1
+			sumarepro <- sumarepro + notafinal
 		FinSi
 		Si notaint > 7.5 Entonces
 			integradormayorque75 = integradormayorque75 + 1
@@ -38,8 +39,10 @@ Algoritmo ej8docente
 	SiNo
 		Escribir "Ningun Alumno reprobó el curso."
 	FinSi
-	Escribir "El porcentaje de alumnos que tienen una nota de integrador mayor que 7.5 es: ", integradormayorque75/(integradormayorque75+(numalumnos-integradormayorque75))*100, "%"
+	Escribir "El porcentaje de alumnos que tienen una nota de integrador mayor que 7.5 es: ", (integradormayorque75/numalumnos)*100, "%"
 	Escribir "La Mayor Nota en las exposiciones es: ", mayorexpo
 	Escribir "El Total de estudiantes que obtuvieron en el Parcial entre 4.0 y 7.5 es: ", parcialmayorymenorque
-	
+SiNo
+	Escribir "Ningun aluno para verificar"
+FinSi
 FinAlgoritmo

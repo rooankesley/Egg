@@ -5,7 +5,9 @@ Algoritmo ej7Subcadena
 	
 	Leer frase
 	
-	Si subcadena(frase,0,0) = "A" o subcadena(frase,0,0) = "a" o subcadena(frase,0,0) = "á" o subcadena(frase,0,0) = "Á" Entonces Escribir "Tu frase inicia con A, bien!!"
-		Sino Escribir "Te dije con A!"
+	Si subcadena(frase,0,0) = "A" o subcadena(frase,0,0) = "a" o subcadena(frase,0,0) = "á" o subcadena(frase,0,0) = "Á" Entonces
+		Escribir "Tu frase inicia con A, bien!!"
+	Sino
+		Escribir "Te dije con A!"
 	FinSi
 FinAlgoritmo

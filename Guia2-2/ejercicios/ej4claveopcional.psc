@@ -24,7 +24,7 @@ Algoritmo ej4claveopcional
 	
 	
 	Si intentos >= 3 Entonces
-		Escribir "Acabaste con los intentos."
+		Escribir "Acabaste con los 3 intentos."
 	FinSi
 
 FinAlgoritmo
