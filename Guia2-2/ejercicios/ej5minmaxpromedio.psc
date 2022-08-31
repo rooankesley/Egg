@@ -4,7 +4,8 @@ Algoritmo ej5minmaxpromedio
 	cantidad = 0
 	suma = 0
 	Hacer
-		Escribir "Digite un numero entero " Sin Saltar
+		Escribir "Ingrese numeros enteros, use el 0 (cero) para finalizar"
+		Escribir "Digite un numero" Sin Saltar
 		Leer num
 		Si cantidad == 0 Entonces
 			min = num
@@ -15,11 +16,11 @@ Algoritmo ej5minmaxpromedio
 		Si num > max Entonces
 			max = num
 		FinSi
-		Si num < min  y num > 0 Entonces
+		Si num < min  y num <> 0 Entonces
 			min = num
 		FinSi
 	Mientras Que num <> 0
-	promedio = suma / cantidad
+	promedio = suma / (cantidad - 1)
 	Escribir "El menor numero ingresado diferente del cero es: ", min
 	Escribir "El mayor numero ingresado es: ", max
 	Escribir "El promedio entre todos los numeros es: ", promedio

@@ -4,7 +4,7 @@ Algoritmo ej8docente
 	Definir i Como Entero
 	Escribir "Cual es la cantidad de estudiantes? " Sin Saltar
 	Leer numalumnos
-		Para i = 1 Hasta numalumnos Hacer
+	Para i = 1 Hasta numalumnos Hacer
 		Escribir "Nota del trabajo prático integrador del alumno ", i, " " Sin Saltar
 		Leer notaint
 		Escribir "Nota de la exposición del alumno ", i, " " Sin Saltar
