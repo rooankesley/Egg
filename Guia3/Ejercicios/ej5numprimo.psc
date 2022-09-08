@@ -12,7 +12,6 @@ Funcion retorno <- esprimo (num1)
 			retorno = Falso
 		FinSi
 	FinPara
-	
 Fin Funcion
 
 Algoritmo ej5numprimo
@@ -29,7 +28,7 @@ Algoritmo ej5numprimo
 	Leer num1
 	Escribir ""
 	
-	Si esprimo(num1) Entonces
+	Si esprimo(num1)Entonces
 		Escribir "El numero ", num1, " es primo."
 	SiNo
 		Escribir "El numero ", num1, " no es primo."

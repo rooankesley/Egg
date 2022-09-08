@@ -14,7 +14,7 @@ Algoritmo ej7temperatura
 	Escribir ""
 	
 	Para i=1 Hasta numDias Hacer
-		tempMed = 0
+		//tempMed = 0
 		Escribir "Ingrese la temperatura Minima del dia ", i, " " Sin Saltar
 		Leer tempMin
 		Escribir "Ingrese la temperatura Maxima del dia ", i, " " Sin Saltar

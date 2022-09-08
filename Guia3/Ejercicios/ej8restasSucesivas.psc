@@ -1,32 +1,17 @@
-Algoritmo ej8restasSucesivas
-	Definir num1, num2, cociente, resta Como Entero
-	resta = 0
-	cociente = 0
-	Escribir "|====================================|"
-	Escribir "|====================================|"
-	Escribir "|========= Restas Sucecivas =========|"
-	Escribir "|====================================|"
-	Escribir "|====================================|"
-	Escribir ""
-	Escribir "Ingrese el primer numero " Sin Saltar
-	Leer num1
-	Escribir "Ingrese el segundo numero " Sin Saltar
-	Leer num2
-	Escribir ""
-	
-	restaSucesiva(num1, num2, resta, cociente)
-	
-	Escribir "El cociente de ", num1, "/", num2, " es: ", cociente
-	Escribir "Y la resta de esa división es: ", resta
-	
+Algoritmo func8
+	definir dividendo, divisor, cociente, resto como entero
+	escribir "Ingrese dos numeros que desee dividir"
+	leer dividendo, divisor
+	division(dividendo, divisor, cociente, resto)
+	escribir "El cociente de su division es de ", cociente, " teniendo un resto de ", resto	
 FinAlgoritmo
 
-SubProceso restaSucesiva(num1 Por Valor, num2 Por Valor, resta Por Referencia, cociente Por Referencia)
-	Si num1 >= num2 Entonces
-		num1 = num1-num2
+SubProceso division(dividendo, divisor, cociente Por Referencia, resto Por Referencia)
+	resto = dividendo
+	cociente = 0
+	Hacer
+		dividendo = resto
+		resto = dividendo - divisor
 		cociente = cociente + 1
-		resta = num1
-	FinSi
-	
+	Mientras Que resto >= divisor
 FinSubProceso
-	
