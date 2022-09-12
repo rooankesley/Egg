@@ -1,8 +1,22 @@
 Algoritmo ej9_extras_numCombinatorio
 	Definir m, n Como Entero
-	Escribir "Ingrese 2 numeros:"
-	Leer m, n
-	Escribir combinatorios(m,n)
+	Escribir "Ingrese 2 numeros para calcular el Coeficiente Binomial"
+	Escribir "Ingrese el valor para el grupo: " Sin Saltar
+	Leer m
+	
+	Escribir "Ingrese el numero de objetos: " Sin Saltar
+	Leer n
+	
+	Mientras n > m Hacer
+		Escribir "Por favor, el grupo tiene que ser mayor que el valor de objetos para el calculo."
+		Escribir "Ingrese el valor para el grupo: " Sin Saltar
+		Leer m
+		
+		Escribir "Ingrese el numero de objetos: " Sin Saltar
+		Leer n
+	FinMientras
+	
+	Escribir "El numero de combinatorios es de: ", combinatorios(m,n)
 FinAlgoritmo
 
 Funcion retorno = combinatorios(m,n)
