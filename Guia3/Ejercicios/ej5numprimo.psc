@@ -28,10 +28,9 @@ Algoritmo ej5numprimo
 	Leer num1
 	Escribir ""
 	
-	Si esprimo(num1)Entonces
+	Si esprimo(num1) Entonces
 		Escribir "El numero ", num1, " es primo."
 	SiNo
 		Escribir "El numero ", num1, " no es primo."
 	FinSi
 FinAlgoritmo
-

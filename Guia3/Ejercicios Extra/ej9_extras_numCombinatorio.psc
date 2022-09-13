@@ -39,4 +39,3 @@ Funcion retorno = combinatorios(m,n)
 	
 	retorno = factM/(factN*factResta)
 FinFuncion
-	

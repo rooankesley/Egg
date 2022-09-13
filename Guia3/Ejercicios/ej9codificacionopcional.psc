@@ -1,5 +1,5 @@
 Algoritmo ej9codificacion
-	Definir frase Como Caracter
+	Definir frase, fraseCodificada Como Caracter
 	Definir i, longitudFrase Como Entero
 	
 	frase = ""
@@ -10,11 +10,12 @@ Algoritmo ej9codificacion
 		
 		longitudFrase = Longitud(frase)-1
 	FinMientras
-	codificacion(frase, longitudFrase)
+	codificacion(frase, longitudFrase, fraseCodificada)
+	Escribir "La frase codificada es: " fraseCodificada
 	Escribir ""
 FinAlgoritmo
-SubProceso codificacion(frase Por Valor, longitudFrase Por Valor)
-	Definir x, fraseCodificada Como Caracter
+SubProceso codificacion(frase, longitudFrase, fraseCodificada Por Referencia)
+	Definir x Como Caracter
 	Definir i Como Entero
 	fraseCodificada = ""
 		
@@ -36,5 +37,5 @@ SubProceso codificacion(frase Por Valor, longitudFrase Por Valor)
 		//Escribir x Sin Saltar
 	FinPara
 	
-	Escribir fraseCodificada
+	
 FinSubProceso

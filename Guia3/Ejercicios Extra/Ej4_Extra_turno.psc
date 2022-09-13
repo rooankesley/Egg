@@ -11,20 +11,20 @@ Algoritmo Ej4_Extra
 	Escribir "Es dia festivo? s/n"
 	leer festivo
 	festivo = Mayusculas(festivo)
-	Escribir "El calculo jornal diario de", nombre," es de $", calculojornal(horas, turno, festivo)
+	Escribir "El calculo jornal diario de ", nombre," es de $", calculojornal(horas, turno, festivo)
 FinAlgoritmo
 Funcion calculo = calculojornal( horas, turno, festivo)
 	Definir calculo Como Real
-	si turno = "D"  & festivo = "S" Entonces
+	si turno = "D"  y festivo = "S" Entonces
 		calculo = (horas * 90) * 1.10
 	sino 
-		si turno = "D" & festivo = "N" Entonces
+		si turno = "D" y festivo = "N" Entonces
 			calculo = (horas * 90)
 		SiNo
-			si	turno = "N" & festivo = "S" Entonces
+			si	turno = "N" y festivo = "S" Entonces
 				calculo = (horas * 125) * 1.15
 			SiNo
-				si	turno = "N" & festivo = "N" Entonces
+				si	turno = "N" y festivo = "N" Entonces
 					calculo = (horas * 125)
 				FinSi
 			FinSi
