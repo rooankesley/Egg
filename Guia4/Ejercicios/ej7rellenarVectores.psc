@@ -58,11 +58,11 @@ SubProceso escribirVectores(vectorA,vectorB)
 	Para i = 0 Hasta 9
 		Segun i Hacer
 			0:
-				Escribir Sin Saltar "[",vectorA[i]
+				Escribir Sin Saltar "[",vectorB[i]
 			9:
-				Escribir Sin Saltar ",",vectorA[i],"]"
+				Escribir Sin Saltar ",",vectorB[i],"]"
 			De Otro Modo:
-				Escribir Sin Saltar ",",vectorA[i]
+				Escribir Sin Saltar ",",vectorB[i]
 		Fin Segun
 	FinPara
 	Escribir ""
